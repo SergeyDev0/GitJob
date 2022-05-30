@@ -46,3 +46,9 @@ img{
 	pointer-events: none;
 	user-select: none;
 }
+button, input{
+	border: none;
+	outline: none;
+	color: black;
+	background-color: inherit;
+}

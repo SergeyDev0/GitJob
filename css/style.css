@@ -26,7 +26,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #EAF3F8;
+    z-index: 3;
 }
 .logo-wrapper{
     margin-left: 4%;
@@ -138,9 +138,12 @@ main{
     align-items: center;
     height: 100vh;
 }
+.main__content-wrapper:last-child{
+    height: 85vh;
+}
 .main-content__title{
     font-size: 46px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .main-content__title--span{
     color: #60CEAE;
@@ -258,4 +261,112 @@ main{
 }
 .main__header-title > span{
     color: #60CEAE;
+}
+.main__video-wrapper{
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main__video-description{
+    font-weight: 500;
+    margin-top: 1.8%;
+    margin-bottom: 1.8%;
+}
+.main__video-description > span{
+    color: #60CEAE;
+    font-weight: 700;
+}
+.main__video-button{
+    padding: 12px 35px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+    font-family: 'Gilroy';
+}
+.section-content__title{
+    font-size: 38px;
+    font-weight: 700;
+}
+.main__video-button:hover{
+    background: linear-gradient(90deg, #60CEAE 0%, #864DF9 100%);
+}
+span.green{
+    color: #60CEAE;
+    font-weight: 700;
+}
+span.regular{
+    font-weight: 500;
+}
+.section-content__subtitle{
+    font-size: 14px;
+    margin-top: 3rem;
+}
+#sliderLeft{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.radio {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+.radio + label {
+  cursor: pointer;
+}
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.radio + label {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin-right: 10px;
+}
+.radio:first-of-type + label{
+    margin-left: 10px;
+}
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(140.9deg, #4ECEA9 13.46%, #864DF9 85.65%);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: all .2s;
+}
+.radio:checked + label:after {
+  opacity: 1;
+}
+.slider-navigation{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
 }
